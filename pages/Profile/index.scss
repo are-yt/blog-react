@@ -1,0 +1,63 @@
+.profile {
+    .container {
+        width: 1000px;
+        padding: 30px 0;
+        border-radius: 10px;
+        margin: 50px auto;
+        box-shadow: 0 0 10px 1px #cccccc80;
+        p {
+            text-align: center;
+            color: #90d7ec;
+        };
+        .avatar-wrapper {
+            width: 50%;
+            margin: 1rem auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            img {
+                width: 136px;
+                height: 136px;
+                border-radius: 50%;
+            }
+            .origin-avatar {
+                position: relative;
+                input {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 136px;
+                    height: 136px;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+            }
+            span {
+                color: var(--primary-color);
+                font-size: 18px;
+                letter-spacing: 5px;
+            }
+        }
+        .upload-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .btn {
+                min-width: 300px;
+                height: 30px;
+            }
+        }
+        .nickname {
+            width: 50%;
+            margin: 1rem auto;
+            .input-nickname {
+                height: 30px;
+            }
+            .update-btn {
+                height: 30px;
+            }
+        }
+    }
+}

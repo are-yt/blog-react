@@ -1,0 +1,16 @@
+#footer {
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    background: #90d7ec;
+    width: 100%;
+    box-shadow: 0 0px 10px 1px #cccccc80;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

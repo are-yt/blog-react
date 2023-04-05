@@ -1,0 +1,236 @@
+.article {
+    .surface-render {
+        color: #fff;
+        text-align: center;
+    }
+    .container {
+        width: 1100px;
+        margin: 50px auto;
+        padding: 10px;
+        background: #fff;
+        .article-area {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .detail {
+                width: 850px;
+                padding: 1rem 10px;
+                border-radius: 10px;
+                line-height: 1.5rem;
+                letter-spacing: 3px;
+                img {
+                    width: 100%;
+                    max-height: 500px;
+                }
+            }
+            .catelog {
+                width: 0;
+                flex: 0.92;
+                padding: 10px;
+                border-radius: 10px;
+                position: relative;
+                .box {
+                    position: sticky;
+                    top: 10px;
+                }
+            }
+        }
+        .link {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #90d7ec;
+            color: #8a8a8a;
+            line-height: 2rem;
+            span {
+                color: #90d7ec;
+                font-weight: 600;
+            }
+        }
+        .cate-and-tags {
+            .item {
+                margin: 1rem 0;
+                .tag {
+                    cursor: pointer;
+                }
+            }
+        }
+        .comment {
+            .title2 {
+                display: flex;
+                align-items: center;
+                color: #ccc;
+                font-size: 16px;
+                .iconfont {
+                    font-size: 18px;
+                }
+                span {
+                    margin-left: 6px;
+                }
+            }
+            .list {
+                .item {
+                    margin: 1rem 0;
+                    .top {
+                        display: flex;
+                        justify-content: space-between;
+                        .avatar {
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                        }
+                        .info {
+                            width: 0;
+                            flex: 0.99;
+                            display: flex;
+                            justify-content: space-between;
+                            .left {
+                                width: 0;
+                                flex: 1;
+                                .nickname {
+                                    display: flex;
+                                    align-items: center;
+                                    span {
+                                        font-weight: 600;
+                                        font-size: 16px;
+                                    }
+                                    .addr {
+                                        margin-left: 6px;
+                                        color: #8a8a8a;
+                                        font-size: 12px;
+                                    }
+                                }
+                                .time {
+                                    color: #8a8a8a;
+                                    margin-top: 10px;
+                                }
+                                .control {
+                                    display: flex;
+                                    align-items: center;
+                                    margin: 10px 0;
+                                    div {
+                                        margin-right: 1rem;
+                                        display: flex;
+                                        align-items: center;
+                                        .iconfont {
+                                            font-size: 12px;
+                                        }
+                                        span {
+                                            margin-left: 10px;
+                                        }
+                                    }
+                                    .endorse {
+                                        cursor: pointer;
+                                        &:hover {
+                                            color: #90d7ec !important;
+                                        }
+                                    }
+                                    .reply {
+                                        .iconfont {
+                                            font-size: 14px;
+                                            position: relative;
+                                            top: 2px;
+                                        }
+                                    }
+                                }
+                            }
+                            .right {
+                                color: #90d7ec;
+                                cursor: pointer;
+                                width: 60px;
+                                margin-right: 50px;
+                            }
+                        }
+                    }
+                    .bottom {
+                        .item2 {
+                            display: flex;
+                            justify-content: space-between;
+                            margin: 20px 0 20px 30px;
+                            .avatar {
+                                width: 35px;
+                                height: 35px;
+                                border-radius: 50%;
+                            }
+                            .info {
+                                width: 0;
+                                flex: 0.99;
+                                display: flex;
+                                justify-content: space-between;
+                                .left {
+                                    width: 0;
+                                    flex: 1;
+                                    .nickname {
+                                        display: flex;
+                                        align-items: center;
+                                        span {
+                                            font-weight: 600;
+                                            font-size: 16px;
+                                        }
+                                        .addr {
+                                            margin-left: 6px;
+                                            color: #8a8a8a;
+                                            font-size: 12px;
+                                        }
+                                    }
+                                    .time {
+                                        color: #8a8a8a;
+                                        margin-top: 10px;
+                                    }
+                                    .control {
+                                        margin: 10px 0;
+                                        .endorse {
+                                            display: flex;
+                                            align-items: center;
+                                            cursor: pointer;
+                                            &:hover {
+                                                color: #90d7ec !important;
+                                            }
+                                            .iconfont {
+                                                font-size: 12px;
+                                            }
+                                            span {
+                                                margin-left: 6px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .right {
+                                    color: #90d7ec;
+                                    cursor: pointer;
+                                    width: 60px;
+                                    margin-right: 50px;
+                                    height: 1rem;
+                                }
+                            }
+                        }
+                        .more {
+                            margin: 0 0 20px 30px;
+                            span {
+                                text-decoration: underline;
+                                color: #90d7ec;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+            .load-more {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px 0;
+            }
+        }
+    }
+    .container-dark {
+        background: #ffffff20;
+        color: #ffffff80;
+        .catelog {
+            .box {
+                div {
+                    color: #ffffff80;
+                }
+            }
+        }
+    }
+}

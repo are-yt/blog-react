@@ -1,0 +1,6 @@
+/* 如果css module里的一个选择器要将它作为全局的，可以使用:global，注册的全局选择器可以直接使用，不需要.xx的方式 */
+/* 普通的css module选择器前面默认加了:local标识，表示这是一个全局唯一的，相当于vue的scoped style里设置的选择器样式 */
+:global(.title) {
+    color: #90d7ec;
+    font-weight: bold;
+}

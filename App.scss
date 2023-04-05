@@ -1,0 +1,26 @@
+@import url(./assets/iconfont/iconfont.css);
+@import url(normalize.css);
+@import url(antd/dist/reset.css);
+:root {
+  --primary-color: #90d7ec;
+  /* 全局spin展示时的层级大小 */
+  --spin-active-zindex: 100;
+
+  --navbar-height: 55px;
+  --navbar-zindex: 90;
+
+  --primary-color: #90d7ec;
+  --primary-color2: #3bc9db;
+
+  --dark-main-color: #1c1c1c;
+}
+#app {
+  width: 100%;
+  min-height: 100vh;
+  background: #f7f7f7;
+  font-size: 13px;
+  position: relative;
+}
+::export {
+  $primaryColor: #90d7ec;
+}

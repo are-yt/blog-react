@@ -1,0 +1,98 @@
+.basic-info {
+    .inner {
+        position: sticky;
+        top: 10px;
+    }
+    .profile,
+    .notice,
+    .statistics {
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 1px #cccccc80;
+    }
+    .profile {
+        margin: 0 auto;
+        padding: 10px 0;
+        img {
+            display: block;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .intro {
+            background: url(http:///p2.qhimg.com/t012665f44a5971d3c4.jpg) no-repeat;
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            overflow: hidden;
+            text-align: center;
+        }
+        .counter {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+        .subscribe {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+    .notice {
+        margin-top: 20px;
+        padding: 10px;
+        display: flex;
+        .iconfont {
+            color: #ef4040;
+            animation: bounce 3s infinite;
+            display: block;
+            @keyframes bounce {
+                0% {
+                    transform: rotate(0);
+                }
+                5% {
+                    transform: rotate(25deg);
+                }
+                10% {
+                    transform: rotate(-25deg);
+                }
+                15% {
+                    transform: rotate(25deg);
+                }
+                20% {
+                    transform: rotate(-25deg);
+                }
+                25% {
+                    transform: rotate(0)
+                }
+                100% {
+                    transform: rotate(0);
+                }
+            }
+        }
+        .content {
+            .title {
+                color: #ef4040;
+            }
+            margin-left: 10px;
+        }
+    }
+    .statistics {
+        padding: 10px;
+        margin-top: 20px;
+        display: flex;
+        .content {
+            margin-left: 10px;
+        }
+    }
+}
+.basic-info-dark {
+    .profile,
+    .notice,
+    .statistics {
+        background: #1c1c1c;
+        color: #fff;
+    }
+}

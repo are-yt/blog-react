@@ -1,0 +1,32 @@
+.home {
+    .main {
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .article-list {
+            width: 70%;
+        }
+        .basic-info {
+            flex: 0.9;
+            p { 
+                position: sticky;
+                top: 0;
+            }
+        }
+    }
+}
+@media (min-width: 1110px) {
+    .home {
+        .main {
+            width: 800px;
+        }
+    }
+}
+@media (min-width: 1400px) {
+    .home {
+        .main {
+            width: 1000px;
+        }
+    }
+}

@@ -1,0 +1,121 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--navbar-zindex);
+    height: var(--navbar-height);
+    display: flex;
+    padding: 30px 30px 20px 30px;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    /* 加这个过渡是因为当showType为top而top又到顶时，不至于突然的还原，而是从top的那个样式过渡回来 */
+    /* 不如不加~~~ */
+    // transition: all 0.5s;
+    h3 {
+        color: #fff;
+        letter-spacing: 5px;
+        cursor: pointer;
+    }
+    .nav-list {
+        display: flex;
+        .item {
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 3px;
+            .iconfont {
+                font-size: 16px;
+            }
+            span {
+                margin-left: 10px;
+            }
+            cursor: pointer;
+            padding-bottom: 8px;
+            position: relative;
+            .border {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0%;
+                border-bottom: 2px solid var(--primary-color);
+                transition: all 0.5s;
+            }
+            &:hover .border {
+                width: 100%;
+            }
+            &:hover {
+                color: var(--primary-color);
+            }
+            .children {
+                position: absolute;
+                top: 27px;
+                left: 0;
+                min-width: 100px;
+                background: #fff;
+                border-radius: 5px;
+                box-shadow: 0 0 5px 0px #f7f7f7;
+                color: #8a8a8a;
+                display: none;
+                .child {
+                    border-radius: 5px;
+                    padding: 10px 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    font-size: 12px;
+                    font-weight: bold;
+                    &:hover {
+                        background: #90d7ec;
+                    }
+                }
+            }
+            &:hover .children {
+                display: block;
+            }
+        }
+    }
+    .search-modal {
+        .list {
+            max-height: 350px;
+            background: #000;
+        }
+    }
+}
+.modal {
+    .control {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.navTop {
+    animation: translateIn 0.5s forwards;
+    background: #00000040;
+    @keyframes translateIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+.navBottom {
+    animation: translateOut 0.5s forwards;
+    background: #00000040;
+    @keyframes translateOut {
+        0% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+    }
+}

@@ -1,0 +1,90 @@
+#tool-aside {
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    padding-right: 10px;
+    max-width: 60px;
+    .row {
+        width: 40px;
+        height: 40px;
+        background: #90d7ec;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 1px #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .row-setting {
+        .iconfont {
+            font-size: 20px;
+            color: #fff;
+            animation: rotate 3s linear infinite;
+            @keyframes rotate {
+                0% {
+                    transform: rotate(0);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+    .row1,
+    .row2 {
+        background: #90d7ec40;
+        animation: show 0.5s ease forwards;
+        opacity: 0;
+        @keyframes show {
+            0% {
+                transform: translateY(40px);
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+    .row1 {
+        animation-delay: 0.5s;
+    }
+    .row-show {
+        animation: showIn 0.5s ease forwards;
+        @keyframes showIn {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    }
+    .row-hidden {
+        animation: showOut 0.5s ease forwards;
+        @keyframes showOut {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(160%);
+            }
+        }
+    }
+    .row1-hidden,
+    .row2-hidden {
+        animation: fadeOut 0.5s ease forwards;
+        opacity: 1;
+        @keyframes fadeOut {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(40px);
+                opacity: 0;
+            }
+        }
+    }
+    .row2-hidden {
+        animation-delay: 0.5s;
+    }
+}

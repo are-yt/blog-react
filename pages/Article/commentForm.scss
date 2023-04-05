@@ -1,0 +1,74 @@
+.comment-form {
+    margin: 20px 0;
+    width: 100%;
+    .title {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        color: #90d7ec;
+        font-size: 18px;
+        .iconfont {
+            font-size: 22px;
+            position: relative;
+            top: 3px;
+        }
+        span {
+            margin-left: 10px;
+        }
+    }
+    .form {
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 10px;
+        border: 1px solid #cccccc80;
+        min-height: 260px;
+        .avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .textarea {
+            width: 0;
+            flex: 0.97;
+            textarea {
+                display: block;
+                width: 100%;
+                min-height: 202px;
+                border: none;
+                resize: none;
+                background: transparent;
+                &:focus {
+                    outline: none;
+                }
+            }
+            img {
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+            }
+            .control {
+                display: flex;
+                justify-content: space-between;
+                .emoji-list {
+                    width: 0;
+                    flex: 0.9;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin: 15px 0;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 12px;
+                    }
+                }
+                .btn {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}

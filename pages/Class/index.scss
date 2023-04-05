@@ -1,0 +1,94 @@
+.classification {
+    .list {
+        width: 1000px;
+        margin: 50px auto;
+        padding: 10px;
+        box-shadow: 0 0 10px 1px #cccccc60;
+        border-radius: 10px;
+        .item {
+            padding: 30px;
+            border-left: 2px dashed #90d7ec;
+            display: flex;
+            position: relative;
+            cursor: pointer;
+            &::after {
+                content: '';
+                position: absolute;
+                left: -5px;
+                top: 0;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #90d7ec;
+            }
+            &:hover {
+                background: #cccccc60;
+            }
+            &:hover .surface{
+                background-size: 150%;
+            }
+            .surface {
+                width: 150px;
+                height: 128px;
+                border-radius: 20px;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center;
+                transition: all 0.5s;
+            }
+            .info {
+                width: 0;
+                flex: 0.9;
+                margin-left: 1rem;
+                .title {
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+                .time {
+                    color: #8a8a8a;
+                    margin: 10px 0;
+                }
+                .content {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                }
+            }
+        }
+        .item-wrapper {
+            .date {
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+    }
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+}
+.classification-dark {
+    .list {
+        .item {
+            .info {
+                .title {
+                    color: #ffffff80;
+                }
+                .time {
+                    color: #ffffff60;
+                }
+                .content {
+                    color: #ffffff80;
+                }
+            }
+        }
+        .item-wrapper {
+            .date {
+                color: #ffffff80;
+            }
+        }
+    }
+}
